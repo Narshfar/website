@@ -41,7 +41,7 @@ transform: rotateY(180deg);
 
 z-index: 2; 
 background-color: #666;
-background-image: url('nf.png');
+background-image: url(asset-path('nf.png'));
 background-repeat: no-repeat;
 background-position: center;
 }
