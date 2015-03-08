@@ -3,7 +3,7 @@
 
 // override for the 'Home' navigation link
 .top-bar .name {
-  font-size: rem-calc(15);
+  font-size: rem-calc(30);
   line-height: 45px; 
   padding: 0 15px;}
 .top-bar .name a {
@@ -59,3 +59,7 @@ section {
   float: right;
   padding: 0 15px;
   }
+
+  .mediumfont {
+  font-size: rem-calc(20);
+}
