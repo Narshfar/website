@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :users
+  devise_for :users
+  #resources :users
 
 
   get '/:id', to: 'static_page#show', as: :spage

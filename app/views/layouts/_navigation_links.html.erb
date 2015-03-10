@@ -1,5 +1,12 @@
 <%# add navigation links to this file %>
-<%= link_to "Admin", users_path %>
+<%= link_to "Admin", '#' %>
 <%= link_to "Videos", spage_path(:id => "videos")%>
 <%= link_to "Games", spage_path(:id =>"games") %>
 <%= link_to "About Us", spage_path(:id => "about") %>
+<% if user_signed_in? %>
+<%= link_to current_user.email, '#' %>
+<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+<% else %>
+<%= link_to "Sign In", new_user_session_path %>
+<%= link_to "Sign Up", new_user_registration_path%>
+<% end %>
