@@ -3,6 +3,7 @@
 <%= link_to "Videos", spage_path(:id => "videos")%>
 <%= link_to "Games", spage_path(:id =>"games") %>
 <%= link_to "About Us", spage_path(:id => "about") %>
+<%= link_to "Blogs", spage_path(:id => "blogs") %>
 <% if user_signed_in? %>
 <%= link_to current_user.username, '#' %>
 <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>

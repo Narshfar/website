@@ -1,0 +1,10 @@
+<% content_for :title do %>Blogs - <%=@blog.title%><% end %>
+<h1><%=@blog.title%></h1>
+<hr>
+<% @blog.posts.each do |p|%>
+<div class="container" id="postcontainer">
+	<h2><%=p.title%></h2>
+	<%= p.content %>
+</div>
+<hr>
+<% end %>

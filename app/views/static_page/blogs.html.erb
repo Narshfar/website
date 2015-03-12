@@ -1,0 +1,10 @@
+<% content_for :title do %>Blog<% end %>
+<ul class="small-block-grid-3" id="blogblockgrid">
+<% Blog.all.each do |b|%>
+ 
+  
+ 	<li id="blogcontainer"><%= link_to blog_show_path(:id => b.id)  do %><%= b.title %><% end %></li>
+ 
+
+<% end %>
+</ul>
