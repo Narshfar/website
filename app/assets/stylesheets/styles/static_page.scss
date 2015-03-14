@@ -2,16 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-
-#blogcontainer {
- border: solid;
- height: 30%;
- background-position: center;
-
-	 }
-
  #blogblockgrid {
  border: solid;
  position: relative;
@@ -42,6 +32,8 @@ main {
 background-image: url(asset-path('bricks.png'));
 background-repeat: repeat;
 }
+
+
 
 @import 'flip';
 

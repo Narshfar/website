@@ -3,9 +3,9 @@
 <% Blog.all.each do |b|%>
  
   		<%if b.published %>
-  		<%= link_to blog_show_path(:id => b.id)  do %>
- 	<li id="blogcontainer"><%= b.title %> <%= image_tag(b.thumbnail) %></li><% end %>
- 		<% end %>
+	  		<%= link_to blog_show_path(:id => b.id)  do %>
 
-<% end %>
+	 			<li class="flipcontainer" id="blogflip"><div class="flip"><div class="back"><p><%= b.title %></p></div> <div class="front" style="background-image: url(<%=image_url(b.thumbnail)%>);"></div></div></li><% end %>
+	 		<% end %>
+		<% end %>
 </ul>
