@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'blog/show'
+  
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
   #resources :users
-
+  get 'blog/show'
 
   get '/:id', to: 'static_page#show', as: :spage
   

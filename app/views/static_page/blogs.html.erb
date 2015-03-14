@@ -2,9 +2,10 @@
 <ul class="small-block-grid-3" id="blogblockgrid">
 <% Blog.all.each do |b|%>
  
-  
- 	<li id="blogcontainer"><%= link_to blog_show_path(:id => b.id)  do %><%= b.title %><% end %></li>
- 
+  		<%if b.published %>
+  		<%= link_to blog_show_path(:id => b.id)  do %>
+ 	<li id="blogcontainer"><%= b.title %> <%= image_tag(b.thumbnail) %></li><% end %>
+ 		<% end %>
 
 <% end %>
 </ul>

@@ -1,0 +1,55 @@
+.flipcontainer {
+	position:relative;
+	background-color: transparent;
+	width: 80%;
+	height: 60%;
+	left: 10%;
+	top: 20%;
+}
+
+.flipcontainer:hover .flip, .flipcontainer.hover .flip {
+
+transform: rotateY(180deg);
+
+}
+.flip, .front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.flip {
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+
+.front, .back {
+	background-color: #666;
+	backface-visibility: hidden;
+	@include border-radius(20px);
+}
+
+.front { 
+	z-index: 2; 
+	background-image: url(asset-path('nf.png'));
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.back { 
+	transform: rotateY(180deg);
+	  p{
+	 position:relative;
+ 	 width:80%;
+ 	 left: 10%;
+	 font-size: 2vw;
+	 line-height: 110%;
+	 margin-bottom: 2%;
+	  }
+	  h1{
+	 position:relative;
+ 	 width:100%; 
+	 font-size: 3vw;
+	  }
+	 }

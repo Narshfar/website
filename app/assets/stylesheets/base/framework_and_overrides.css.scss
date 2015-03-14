@@ -39,14 +39,7 @@
 // apply styles to HTML elements
 // to make views framework-neutral
 
-main {
-  @include six-columns-centered;
-  background-color: #D6C36D;
-  left: 25%;
-  height: 80%;
-  top: 10%;
-  border-radius: 20px;
-  }
+
 
 section {
   @extend .row;
@@ -60,6 +53,17 @@ section {
   padding: 0 15px;
   }
 
-  .mediumfont {
-  font-size: rem-calc(20);
+  h1 {
+  font-size: 3vw;
+  }
+  h2 {
+    font-size: 3.0vh;
+  }
+/*  .mediumfont {
+ position:relative;
+ height:50%;
+ width:100%;
+ float:clear; 
+ font-size: 1vw;
 }
+*/
