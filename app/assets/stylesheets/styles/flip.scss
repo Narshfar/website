@@ -36,9 +36,9 @@
 }
 
 #blogflip{
-	@include flip-container(inherit, 30%);
+	@include flip-container(20%, 20%);
 	position: relative;
-
+	margin: 30px;
 	.flip, .front, .back {
 		@include flip-front-back(1s);
 	}

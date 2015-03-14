@@ -2,14 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- #blogblockgrid {
- border: solid;
- position: relative;
- width: 100%;
- height: 100%;
- $spacing: 10%;
 
-	 }
 
 main {
 	width: 100%;
@@ -37,4 +30,10 @@ background-repeat: repeat;
 
 @import 'flip';
 
-
+ #blogblockgrid {
+ border: solid;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ $spacing: 10%;
+	 }
