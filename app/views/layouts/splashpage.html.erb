@@ -11,15 +11,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body class="mainbody">
+  <body class="splashpage">
     <header>
-      <%= render 'layouts/navigation' %>
     </header>
     <main role="main" class="container">
        <%= render 'layouts/messages' %>
-       <div class="content">
        <%= yield %>
-        </div>    
     </main>
   </body>
 </html>

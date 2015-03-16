@@ -1,0 +1,21 @@
+#splashpagecontent {
+	position:relative;
+	width:50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	background-color: silver;
+	text-align: center;
+	p{
+		font-size: 1.1vw;
+		line-height: 110%;
+	}
+	button {
+		position: relative;
+		margin: 10%;
+		top: 50%;
+	}
+}
+.splashpage{
+	@include background-image(linear-gradient(#5c5c5c, #111111));
+}

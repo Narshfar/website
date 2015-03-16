@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get '/:id', to: 'static_page#show', as: :spage
   
-  root "static_page#show"
+  root "static_page#splashpage"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

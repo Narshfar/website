@@ -20,12 +20,12 @@ main {
 	
 }
   
- body {
+ .mainbody {
 
 background-image: url(asset-path('imgo.jpg'));
 background-repeat: no-repeat;
-   -webkit-background-size: cover;
-   background-size: cover;
+   -webkit-background-size: 100%;
+   background-size: 100%;
 }
 
 
@@ -39,3 +39,4 @@ background-repeat: no-repeat;
  height: 100%;
  $spacing: 10%;
 	 }
+   @import 'splashpage';
