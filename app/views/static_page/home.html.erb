@@ -1,7 +1,7 @@
-<div class="flipcontainer" id="mainflip">
+<!-- <div class="flipcontainer" id="mainflip">
 	<div class="flip">
 		
-	<div class="front" style="background-image: url(<%=image_url('nf.png')%>);"> </div>
+	<div class="front" style="background-image: url(<%image_url('nf.png')%>);"> </div>
 	<div class="back container"> 
 	<h1><b>NARSH &#x00B7; FAR</b></h1>
 	<p class="mediumfont">
@@ -15,4 +15,56 @@
 	</div>
 
 	</div>
+</div> -->
+
+<div class="container" id="homecontainer">
+	<div class="row" id="banner">
+	<div class="small-2 columns" id="navbutton"><h2>Navigation</h2></div>
+		<div class="small-8 columns"><h1>NARSHFAR</h1></div>
+		<div class="small-2 columns" id="profilebutton"><h2>Profile</h2></div>
+	</div>
+
+	<div class="row">
+		<div class="small-2 columns" id="navarea">
+			<ul class="button-group radius stack">
+			  <%= render 'layouts/navigation_links' %>
+			</ul>
+		</div>
+		<div class="small-8 columns" id="bodyarea">
+			<div class="row">
+				<div class="small-12 columns" id="news">
+					<div class="panel radius"><h2>News!</h2>
+						</hr><p>render news update block Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas excepturi, saepe voluptatem deserunt nesciunt labore eaque magnam, doloremque dolor hic inventore minima ipsam repellat quae porro libero quia omnis. Velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla fuga nisi veniam dolorum voluptas incidunt eligendi, a vel amet ut ducimus aliquam nesciunt. Sit ea, praesentium! Nemo impedit odit minus!</p>
+						<p>render news update block Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas excepturi, saepe voluptatem deserunt nesciunt labore eaque magnam, doloremque dolor hic inventore minima ipsam repellat quae porro libero quia omnis. Velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla fuga nisi veniam dolorum voluptas incidunt eligendi, a vel amet ut ducimus aliquam nesciunt. Sit ea, praesentium! Nemo impedit odit minus!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row" data-equalizer>
+				<div class="small-6 columns" data-equalizer-watch>
+					<div class="panel radius">
+						<h3> Join Narshfar!</h3>
+						<p>If you like what we are trying to accomplish here, then go ahead and:</p>
+						<%= link_to "Sign Up", new_user_registration_path, :class => "button radius"%>
+					</div>
+				</div>
+				<div class="small-6 columns" data-equalizer-watch>
+					<div class="panel radius">
+						<h3>It's a Social Thing!</h3>
+						<p>You like the idea, now spread it! Check out our social media pages and spread the word!</p>
+
+					<% #TODO add csssprites for social media %> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="small-2 columns" id="profilearea">
+		<h3>Profile</h3>
+		</div>
+	</div>
+
+	<div class="row">
+				<div class="small-12 columns" id="footer">
+				<hr> Narshfar&#174; 2015.</div>
+	</div>
+	
 </div>

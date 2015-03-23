@@ -3,8 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-main {
+/*main {
 	width: 100%;
 	height:100%;
 
@@ -39,4 +38,62 @@ background-repeat: no-repeat;
  height: 100%;
  $spacing: 10%;
 	 }
+   */
+  body {
+          background-color: gray;
+  }
+  #homecontainer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      .row {
+        @include large-row;
+        position: relative;
+      }
+  }
+
+  #footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .panel {
+        position: relative;
+        height: 100%;
+      }
+
+  .button-group {
+    a {
+      @extend .radius;
+      @extend .button;
+      font-size: 1vw;
+    }
+  }
+
+  #banner {
+    text-align: center;
+    position: relative;
+    height:10%;
+  }
+    
+  #news {
+    text-align: center;
+  }
+  #profilebutton, #navbutton {
+    border-style: solid;
+  }
+
+  #profilearea {
+    position: fixed;
+    border-style: solid;
+    height: 100%;
+    right: 0px;
+
+
+  }
+
+
    @import 'splashpage';

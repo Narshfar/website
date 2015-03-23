@@ -1,6 +1,8 @@
 // import the CSS framework
 @import "foundation";
 
+
+
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(30);
@@ -21,6 +23,10 @@
   @extend .columns;
   @extend .text-center;
   }
+
+@mixin large-row {
+  max-width: 100%;
+}
 // create your own classes
 // to make views framework-neutral
 .column {
